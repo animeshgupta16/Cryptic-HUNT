@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEALED // Case No. H-98-861 — Barrett/Goodwin v. Columbia-HCA/Gramercy</title>
+
+    <!--
+  Breadcrumb. Decode it if you like — it just points you two inches down.
+  BASE64: SWYgeW91IGNhbiByZWFkIHRoaXMsIHlvdSdyZSBhbHJlYWR5IGFoZWFkIG9mIG1vc3QgdmlzaXRvcnMuIFNjcm9sbCBkb3duIGluIHRoZSBzb3VyY2Ug4oCUIENsZXJrJ3MgTm90ZSAxIG9mIDUgaXMgaW4gdGhlIGJpZyBjb21tZW50IGJsb2NrIGJlbG93Lg==
+-->
+    <meta name="clearance-log"
+        content="SWYgeW91IGNhbiByZWFkIHRoaXMsIHlvdSdyZSBhbHJlYWR5IGFoZWFkIG9mIG1vc3QgdmlzaXRvcnMuIFNjcm9sbCBkb3duIGluIHRoZSBzb3VyY2Ug4oCUIENsZXJrJ3MgTm90ZSAxIG9mIDUgaXMgaW4gdGhlIGJpZyBjb21tZW50IGJsb2NrIGJlbG93Lg==">
+
+    <!--
+============================================================================
+ RECORDS DIVISION — RESTRICTED ARCHIVE — INTERNAL FILE COPY
+ If you're reading this, you already know to check the page source.
+ Good instinct. Keep that habit for the rest of this file — not everything
+ here is meant to be seen on the first pass.
+
+ CLERK'S NOTE 1 of 5
+ "This archive doesn't unseal itself. The final code has FOUR segments,
+  and every one of them is already sitting in plain sight in the Rulings
+  tab — you just have to know which four things to pull, and how they
+  fit together. That 'how' is scattered in four more places:
+
+    - Three more notes are hidden past this one, found by DOING things,
+      not just reading them. This machine takes typed words. It also
+      remembers old cheat codes from a much older kind of console.
+    - A fifth note is hiding in the Evidence Locker, under something
+      that's been blacked out for a reason. Blacked out isn't the same
+      as gone.
+    - And it never hurts to check whether this page has anything to
+      say back to you, in the one place developers actually look.
+
+  Five notes total. You don't need to find them in order. You do need
+  all five before the Terminal will make any sense."
+============================================================================
+-->
+
+    <link rel="stylesheet" href="2.css">
+</head>
+
+<body>
+
+    <!-- ============================= BOOT SCREEN ============================= -->
+    <div id="boot-screen" role="status" aria-live="polite">
+        <div id="boot-lines"></div>
+        <button id="skip-boot" type="button">SKIP &gt;&gt;</button>
+    </div>
+
+    <!-- ============================== MAIN APP ================================ -->
+    <div id="app" hidden>
+
+        <header class="topbar">
+            <div class="seal" aria-hidden="true">
+                <svg viewBox="0 0 100 100" width="42" height="42">
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="2" />
+                    <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="1" />
+                    <path d="M50 20 L58 45 L50 40 L42 45 Z" fill="currentColor" />
+                    <path d="M30 60 Q50 78 70 60" fill="none" stroke="currentColor" stroke-width="3" />
+                </svg>
+            </div>
+            <div class="case-id">
+                <span class="case-id-label">CASE NO.</span>
+                <span class="case-id-num">H-98-861 &nbsp;/&nbsp; 99-CV-3304 (RCL)</span>
+            </div>
+            <div class="clearance-stamp">RESTRICTED&nbsp;ACCESS</div>
+        </header>
+
+        <div class="vitals-strip">
+            <svg class="ecg" viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true">
+                <polyline id="ecg-line" class="ecg-line" fill="none" stroke-width="2"
+                    points="0,20 40,20 50,5 60,35 70,20 110,20 120,8 130,32 140,20 300,20" />
+            </svg>
+            <span class="vitals-label">
+                SIGNS OF LIFE — CLERK'S NOTES RECOVERED:
+                <span id="clue-count">0</span>/<span id="clue-total">5</span>
+                <span class="vitals-sub">(this monitor auto-detects 3 of 5 — two are old-school; report them yourself in
+                    the Terminal)</span>
+            </span>
+        </div>
+
+        <nav class="tabs" aria-label="Case sections">
+            <a href="#overview">Overview</a>
+            <a href="#persons">Persons of Interest</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#evidence">Evidence Locker</a>
+            <a href="#rulings">Rulings</a>
+            <a href="#terminal">Unseal Terminal</a>
+        </nav>
+
+        <main>
+
+            <!-- ============================ OVERVIEW ============================ -->
+            <section id="overview" class="panel">
+                <h2><span class="tag">01</span> Overview — What This File Is</h2>
+                <p>
+                    This is a public-record dossier for a False Claims Act <em>qui tam</em>
+                    case brought by two former employees of Gramercy Surgery Center, an
+                    outpatient facility in Houston, Texas, against Columbia/HCA. The
+                    relators — Scott Barrett and Marie Goodwin — alleged improper
+                    Medicare co-pay waivers, mis-coding of uncovered procedures, pricing
+                    and referral arrangements benefiting physician owners, and
+                    retaliation after they raised concerns internally.
+                </p>
+                <div class="callout">
+                    <strong>Read carefully:</strong> an allegation is not a finding. A
+                    parent company's nationwide settlement is not the same thing as a
+                    verdict in <em>this</em> case. This file separates the two — and
+                    so should you, once you get to the Terminal.
+                </div>
+                <p>
+                    The case never reached a fraud trial. It was narrowed twice — once on
+                    the pleadings, once on summary judgment — before it closed. The two
+                    rulings that did that narrowing are the heart of this archive, and
+                    of what it takes to unseal it. Read <a href="#rulings">Rulings</a>
+                    slowly. Every word of it is load-bearing.
+                </p>
+            </section>
+
+            <!-- ============================ PERSONS ============================= -->
+            <section id="persons" class="panel">
+                <h2><span class="tag">02</span> Persons of Interest</h2>
+                <div class="card-grid">
+
+                    <details class="card">
+                        <summary>Scott Barrett <span class="role">Administrator · Relator</span></summary>
+                        <p>Became Gramercy's administrator in late 1995. Filed the sealed
+                            qui tam action in March 1998. Settled his own employment claims
+                            privately in September 2004 — terms were never made public.</p>
+                    </details>
+
+                    <details class="card">
+                        <summary>Marie Goodwin <span class="role">Business Operations Manager · Relator</span></summary>
+                        <p>Ran Gramercy's business office from 1993 to January 1997.
+                            Logged pricing concessions and raised concerns up the chain
+                            starting in 1996. Fired January 2, 1997, after a dispute over
+                            year-end reports. Her retaliation claim later failed for lack of
+                            a proven causal link.</p>
+                        <!-- She kept better records than anyone gave her credit for.
+               If you ever intercept a transmission signed "M.G.", that's her. -->
+                    </details>
+
+                    <details class="card">
+                        <summary>Carol Simons <span class="role">Successor Administrator</span></summary>
+                        <p>Took over both the Travis and Gramercy sites in December 1996
+                            after Barrett's firing. Fired Goodwin following an escalating
+                            argument over reporting duties on December 31, 1996 and
+                            January 2, 1997.</p>
+                    </details>
+
+                    <details class="card">
+                        <summary>Greg Beasley <span class="role">Regional VP, Ambulatory Surgery</span></summary>
+                        <p>Visited Gramercy in May 1996 and joined a conference call where
+                            co-pay waivers, doctor demands, and pricing were discussed —
+                            later cited as the strongest evidence of protected reporting.</p>
+                    </details>
+
+                    <details class="card">
+                        <summary>Kirk Tenkhoff <span class="role">Regional Compliance Director</span></summary>
+                        <p>Present on the May 1996 call. Later testified he told the
+                            relators that discounting co-pays and deductibles was improper,
+                            and that he planned to consult counsel and the CFOs.</p>
+                    </details>
+
+                    <details class="card">
+                        <summary>Pam Ashworth <span class="role">Regional CFO</span></summary>
+                        <p>Goodwin raised the overpayment holding account with her in
+                            September 1996. Ashworth directed that future overpayments go
+                            back to insurers, but didn't address funds already transferred.</p>
+                    </details>
+
+                </div>
+            </section>
+
+            <!-- ============================ TIMELINE ============================= -->
+            <section id="timeline" class="panel">
+                <h2><span class="tag">03</span> Timeline</h2>
+                <ol class="timeline">
+                    <li><time>1993</time> Goodwin joins Gramercy's business office.</li>
+                    <li><time>1994</time> Columbia/HCA acquires Gramercy; overpayment-refund questions begin.</li>
+                    <li><time>Late 1995</time> Barrett becomes administrator.</li>
+                    <li><time>Mar 1996</time> Goodwin starts logging concessions, free cases, and fee waivers.</li>
+                    <li><time>May 1996</time> Dallas regional meeting, Beasley's site visit, and the conference call —
+                        the key internal-reporting event.</li>
+                    <li><time>Sep 1996</time> Overpayment holding account raised with Ashworth.</li>
+                    <li><time>Oct 1996</time> Goodwin refuses further pricing deals; a performance memo is written about
+                        her.</li>
+                    <li><time>Dec 1996</time> Barrett is fired; Simons takes over both sites.</li>
+                    <li><time>Jan 2, 1997</time> Goodwin is fired following a dispute with Simons.</li>
+                    <li><time>Mar 1998</time> Barrett files the sealed FCA suit — S.D. Tex. No. H-98-861.</li>
+                    <li><time>1999</time> Case transferred into the D.C. MDL as No. 99-cv-3304.</li>
+                    <li><time>Mar 15, 2001</time> The United States declines to intervene.</li>
+                    <li class="ruling-marker"><time>Feb 24, 2003</time> ★ Ruling One — D.C. dismissal (see Rulings).
+                    </li>
+                    <li><time>Sep 2004</time> Barrett settles his claims privately.</li>
+                    <li class="ruling-marker"><time>Aug 10, 2005</time> ★ Ruling Two — Houston summary judgment (see
+                        Rulings).</li>
+                </ol>
+            </section>
+
+            <!-- ============================ EVIDENCE ============================= -->
+            <section id="evidence" class="panel">
+                <h2><span class="tag">04</span> Evidence Locker</h2>
+                <p class="hint-text">Some exhibits below have been partially declassified. Others haven't — yet. Some
+                    blacked-out lines respond better to a mouse than to your eyes. Try dragging your cursor across one.
+                </p>
+
+                <div class="exhibit">
+                    <h3>Exhibit A — Sealed Complaint <span class="exhibit-date">Filed March 1998</span></h3>
+                    <p>Alleges routine co-pay waivers, mis-coded procedures, discounted
+                        or free cases for referring physicians, an equipment-lease
+                        arrangement, and retained insurance overpayments.</p>
+                </div>
+
+                <div class="exhibit">
+                    <h3>Exhibit B — D.C. MDL Opinion <span class="exhibit-date">Feb. 24, 2003</span></h3>
+                    <p>251 F. Supp. 2d 28. Holds that kickback theories and implied
+                        certification can, in principle, support False Claims Act liability
+                        — but dismisses the fraud counts without prejudice for lack of
+                        Rule 9(b) particularity.</p>
+                    <p class="declass">
+                        <span class="redacted" id="redacted-clue" tabindex="0" title="Select this text.">
+                            <span class="redacted-block">████████████ ██ ████████ ███ ████ ██████████ █████ ████, ██
+                                █████ ██████████. ████ ██ ███ ███ ████ ██████ █████ █████.</span><span
+                                class="redacted-payload" id="redacted-payload">&nbsp;Clerk's Note 5 of 5 — the last
+                                piece: string your four segments together with a single hyphen between each one, and
+                                nothing else. No spaces, anywhere, ever. That's the whole assembly instruction.
+                                Everything you need to fill those four segments in is written under "The Two
+                                Rulings."</span>
+                        </span>
+                    </p>
+                </div>
+
+                <div class="exhibit">
+                    <h3>Exhibit C — Houston Summary Judgment <span class="exhibit-date">Aug. 10, 2005</span></h3>
+                    <p>Finds a factual dispute over whether Goodwin's internal reports
+                        counted as protected activity — but no evidence that the
+                        decision-maker who fired her knew about them. Case closes on
+                        causation grounds.</p>
+                </div>
+
+                <div class="exhibit">
+                    <h3>Exhibit D — DOJ National Settlement Record <span class="exhibit-date">Dec. 2000 / Jun.
+                            2003</span></h3>
+                    <p>Columbia/HCA's separate nationwide resolutions totaled roughly
+                        $1.7 billion across unrelated hospital conduct. Context only —
+                        this Gramercy matter was not part of that settled group.</p>
+                </div>
+
+                <button id="decode-btn" type="button" class="ghost-btn"
+                    data-transmission="Q0xFUksgTk9URSAoVU5OVU1CRVJFRCk6IFRoZXJlIGlzIG5vIHNpeHRoIG5vdGUuIFN0b3AgZGVjb2RpbmcgdHJhbnNtaXNzaW9ucyBhbmQgZ28gcmVhZCB0aGUgUnVsaW5ncyB0YWIuIC0tIE0uRy4=">
+                    Analyze intercepted transmission
+                </button>
+                <pre id="transmission-output" aria-live="polite"></pre>
+            </section>
+
+            <!-- ============================ RULINGS ============================== -->
+            <section id="rulings" class="panel">
+                <h2><span class="tag">05</span> The Two Rulings</h2>
+                <p>Everything this case became rests on these two decisions. Read the
+                    stamps, the names, and the dates closely — they matter more than once,
+                    and they matter more than the prose around them.</p>
+
+                <div class="ruling-card">
+                    <div class="stamp">RCL</div>
+                    <div>
+                        <h3>Ruling One — Dismissal on the Pleadings</h3>
+                        <p><strong>United States ex rel. Barrett v. Columbia/HCA</strong>,
+                            251 F. Supp. 2d 28 — United States District Court, District of
+                            Columbia.</p>
+                        <p>Decided <strong>February 24, 2003</strong> by
+                            <strong>Judge Royce C. Lamberth</strong>. The fraud counts were
+                            dismissed without prejudice for failing Rule 9(b)'s particularity
+                            requirement. The retaliation and emotional-distress claims
+                            survived.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ruling-card">
+                    <div class="stamp">LHR</div>
+                    <div>
+                        <h3>Ruling Two — Summary Judgment</h3>
+                        <p><strong>United States ex rel. Barrett and Goodwin v. Columbia
+                                Healthcare Corp.</strong>, No. H-98-861 — United States District
+                            Court, Southern District of Texas, Houston Division.</p>
+                        <p>Decided <strong>August 10, 2005</strong> by
+                            <strong>Judge Lee H. Rosenthal</strong>. Summary judgment for the
+                            defendants on all of Goodwin's remaining claims. The case
+                            effectively ends here.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================ TERMINAL ============================= -->
+            <section id="terminal" class="panel">
+                <h2><span class="tag">06</span> Unseal Terminal</h2>
+                <p>
+                    This archive unseals with a single code: four segments, assembled
+                    from what's written above and from what you've dug up elsewhere in
+                    this file. Five Clerk's Notes are hidden through this archive. You
+                    don't need to find them in order — you do need all of them to know
+                    <em>how</em> the four segments fit together.
+                </p>
+
+                <div id="konami-panel" class="reveal-panel" hidden></div>
+                <div id="keyword-panel" class="reveal-panel" hidden></div>
+
+                <div class="manual-report">
+                    <p class="hint-text">Two notes don't report to this terminal automatically. If you found them, say
+                        so:</p>
+                    <button id="report-comment" type="button" class="ghost-btn small" data-found="false">I found the
+                        note in the page source</button>
+                    <button id="report-console" type="button" class="ghost-btn small" data-found="false">I found the
+                        note in the console</button>
+                </div>
+
+                <div class="hint-row">
+                    <button id="hint-btn" type="button" class="ghost-btn">Request a nudge</button>
+                    <span id="hint-text" aria-live="polite"></span>
+                </div>
+
+                <form id="unseal-form" autocomplete="off">
+                    <label for="code-input">UNSEAL CODE</label>
+                    <input id="code-input" name="code" type="text" placeholder="XXX-0000-XXX-0000" spellcheck="false"
+                        autocapitalize="characters">
+                    <button type="submit" id="unseal-btn">UNSEAL</button>
+                </form>
+                <p id="unseal-result" role="alert"></p>
+
+                <button id="reset-btn" type="button" class="ghost-btn small">Reset investigation</button>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Public-record research summary. Not legal advice. Compiled for
+                case-study purposes.</p>
+            <!-- Ctrl+F is not cheating. It's called being a good investigator. -->
+        </footer>
+
+        <div id="toast" role="status" aria-live="polite"></div>
+
+    </div>
+
+    <script src="2.js"></script>
+</body>
+
+</html>

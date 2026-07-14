@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CASE ZERO — The First File Is Already Open</title>
+  <meta name="description"
+    content="Case Zero is the first cryptic hunt this school has ever run. Inter-house teams. Five hours. No points, no penalties — only how far your house gets. Something is already hidden on this page.">
+
+  <!--
+  Curious enough to check the source? Good instinct — that's the whole game.
+  The four-digit code isn't written anywhere in this file. But it IS on the page.
+-->
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23F2B705'/%3E%3Ctext x='29' y='73' font-size='60' font-family='Arial' font-weight='900' fill='%231B1812'%3E0%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <a class="navbar__brand" href="#top" aria-label="Case Zero, back to top">0</a>
+
+    <nav class="navbar__links" aria-label="Section navigation">
+      <a href="#briefing" data-section="briefing" class="navbar__link">Briefing</a>
+      <a href="#format" data-section="format" class="navbar__link">Format</a>
+      <a href="#method" data-section="method" class="navbar__link">Method</a>
+      <a href="#fragment-zero" data-section="fragment-zero" class="navbar__link">Evidence</a>
+      <a href="#details" data-section="details" class="navbar__link">Details</a>
+      <a href="#enlist" data-section="enlist" class="navbar__link navbar__link--cta">Enlist</a>
+    </nav>
+
+    <div class="navbar__status" id="status-pill">
+      <span class="navbar__dot" aria-hidden="true"></span>
+      <span id="status-text">OPEN</span>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="top" class="hero">
+      <span class="badge-sticker">FIRST TIME EVER AT THIS SCHOOL</span>
+
+      <h1 class="hero__title">CASE<span class="hero__title-zero">ZERO</span></h1>
+
+      <p class="hero__tagline" id="scramble-target">There are no clues. Only things you haven't noticed yet.</p>
+
+      <div class="chip-row">
+        <span class="chip">FILE NO. 000</span>
+        <span class="chip">CLASSES IX&ndash;XII</span>
+        <span class="chip">ALL HOUSES ELIGIBLE</span>
+      </div>
+
+      <div class="hero__actions">
+        <a href="#briefing" class="btn btn--primary">Open The File</a>
+        <a href="#fragment-zero" class="btn btn--ghost">There's already a clue here</a>
+      </div>
+
+      <div class="countdown" id="countdown">
+        <span class="countdown__label">CASE OPENS IN</span>
+        <div class="countdown__tiles">
+          <div class="countdown__tile"><span id="cd-days">00</span><small>days</small></div>
+          <div class="countdown__tile"><span id="cd-hours">00</span><small>hrs</small></div>
+          <div class="countdown__tile"><span id="cd-mins">00</span><small>min</small></div>
+          <div class="countdown__tile" id="cd-secs-tile"><span id="cd-secs">00</span><small>sec</small></div>
+        </div>
+      </div>
+
+      <p class="hero__scrollhint">Scroll. Or don't — some investigators start elsewhere.</p>
+    </section>
+
+    <!-- ============ BRIEFING ============ -->
+    <section id="briefing" class="section reveal">
+      <div class="section__head">
+        <span class="eyebrow">01 &middot; Case Briefing</span>
+        <h2 class="section__title">This isn't a quiz.<br>It's an investigation.</h2>
+      </div>
+
+      <div class="prose">
+        <p>
+          Every school eventually runs its first cryptic hunt. This is ours. Case Zero opened after
+          <span class="scratch" tabindex="0" role="button" aria-label="Hidden detail. Press or hover to reveal.">
+            <span class="scratch__cover" aria-hidden="true">SCRATCH TO REVEAL</span>
+            <span class="scratch__answer">a discrepancy in the archive room</span>
+          </span>
+          surfaced during a routine audit, and nobody has fully explained it since. What we know: the
+          remaining answers are still here, scattered across a place your house already knows well<span
+            class="hidden-fragment" aria-hidden="true">4471</span> &mdash; this campus. What we don't know yet is which
+          house will actually be the one to find them.
+        </p>
+        <p>
+          There is no traditional scoring. No points added, none deducted, no penalty for a wrong turn
+          or an unlocked hint. Progress is the only currency that matters &mdash; every stage your house
+          clears is permanent proof of what you found, and the house that goes furthest in five hours
+          wins. Not the fastest. The furthest.
+        </p>
+      </div>
+
+      <ul class="note-row">
+        <li><span class="note-dot" aria-hidden="true">&#10003;</span>No points lost, ever</li>
+        <li><span class="note-dot" aria-hidden="true">&#10003;</span>No penalty for hints or wrong turns</li>
+        <li><span class="note-dot" aria-hidden="true">&#10003;</span>Progress is the only proof that counts</li>
+      </ul>
+    </section>
+
+    <!-- ============ FORMAT ============ -->
+    <section id="format" class="section reveal">
+      <div class="section__head">
+        <span class="eyebrow">02 &middot; How It Unfolds</span>
+        <h2 class="section__title">One continuous case.<br>Not a level-select screen.</h2>
+        <p class="lede">
+          Nothing here is numbered &ldquo;Level 1&rdquo; or &ldquo;Puzzle 3.&rdquo; Every stage is another
+          chapter of the same investigation &mdash; each answer hands you evidence, not a password, and
+          every piece of evidence raises a new question on the way to the next one.
+        </p>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat-chip stat-chip--sun"><strong>~5 HRS</strong><span>Runtime</span></div>
+        <div class="stat-chip stat-chip--coral"><strong>IX&ndash;XII</strong><span>Eligible classes</span></div>
+        <div class="stat-chip stat-chip--teal"><strong>INTER-HOUSE</strong><span>Team format</span></div>
+        <div class="stat-chip stat-chip--peri"><strong>DIGITAL + ON-CAMPUS</strong><span>Where it happens</span></div>
+      </div>
+
+      <ol class="trail">
+        <li class="trail__node trail__node--open">
+          <span class="trail__circle">0</span>
+          <span class="trail__label">Where It Begins</span>
+          <span class="trail__note">Every house starts in the same room. Not everyone leaves it at the same time.</span>
+        </li>
+        <li class="trail__node trail__node--locked">
+          <span class="trail__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="11" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="2" />
+              <path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" />
+            </svg></span>
+          <span class="trail__label">CH. 01</span>
+        </li>
+        <li class="trail__node trail__node--locked">
+          <span class="trail__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="11" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="2" />
+              <path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" />
+            </svg></span>
+          <span class="trail__label">CH. 02</span>
+        </li>
+        <li class="trail__node trail__node--locked">
+          <span class="trail__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="11" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="2" />
+              <path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" />
+            </svg></span>
+          <span class="trail__label">CH. 03</span>
+        </li>
+        <li class="trail__node trail__node--locked trail__node--fade">
+          <span class="trail__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="11" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="2" />
+              <path d="M8 11V8a4 4 0 018 0v3" stroke="currentColor" stroke-width="2" />
+            </svg></span>
+          <span class="trail__label">CH. 04</span>
+        </li>
+        <li class="trail__node trail__node--more">
+          <span class="trail__circle">&hellip;</span>
+          <span class="trail__label">however far you get</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ METHOD ============ -->
+    <section id="method" class="section reveal">
+      <div class="section__head">
+        <span class="eyebrow">03 &middot; Method Of Inquiry</span>
+        <h2 class="section__title">We won't tell you what kind of puzzle you're looking at.</h2>
+        <p class="lede">
+          That's not withheld to be difficult &mdash; figuring out the method is part of solving it.
+          Evidence will reach you through more than one sense, and more than one layer of the page.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <div class="method-card">
+          <span class="method-card__badge method-card__badge--sun"><svg viewBox="0 0 24 24" fill="none">
+              <path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6z" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8" />
+            </svg></span>
+          <h3>What You See</h3>
+          <p>Images, layouts, timestamps, small inconsistencies. Some details are decoration. Some aren't. The page
+            doesn't tell you which.</p>
+        </div>
+        <div class="method-card">
+          <span class="method-card__badge method-card__badge--coral"><svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 3v10M8 7c-2 2-2 6 0 8M16 7c2 2 2 6 0 8M5 4c-3 3-3 13 0 16M19 4c3 3 3 13 0 16"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg></span>
+          <h3>What You Hear</h3>
+          <p>Not every clue is meant to be read. Some are meant to be played, slowed down, or listened to twice.</p>
+        </div>
+        <div class="method-card">
+          <span class="method-card__badge method-card__badge--teal"><svg viewBox="0 0 24 24" fill="none">
+              <path d="M8 5L2 12l6 7M16 5l6 7-6 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></span>
+          <h3>What's Underneath</h3>
+          <p>The structure of a page can hold as much as its content &mdash; how it's built, named, and labeled matters
+            exactly as much as what's written on it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FRAGMENT ZERO — the combination lock puzzle ============ -->
+    <section id="fragment-zero" class="section section--panel reveal">
+      <div class="lock-panel">
+        <span class="eyebrow eyebrow--light">Evidence Locker &middot; Fragment 0</span>
+        <h2 class="lock-panel__title">This page is already part of the case.</h2>
+        <p class="lock-panel__body">
+          Before Case Zero even opens, one piece of evidence is already live on this page &mdash;
+          not written in this sentence. Somewhere else. Dial in the four digits and pull the handle.
+        </p>
+
+        <div class="lock" id="combo-lock">
+          <div class="lock__dials" id="lock-dials"><!-- 4 dial units injected by script.js --></div>
+          <button type="button" class="lock__handle" id="lock-submit">Pull</button>
+        </div>
+
+        <p id="lock-feedback" class="lock-feedback" aria-live="polite" role="status"></p>
+
+        <p class="lock-panel__hint">Hint: not everything worth reading is meant to be seen. Try selecting a line that
+          looks a little short for its sentence.</p>
+        <noscript>
+          <p class="lock-panel__hint">This lock needs JavaScript enabled to turn.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ DETAILS ============ -->
+    <section id="details" class="section reveal">
+      <div class="section__head">
+        <span class="eyebrow">04 &middot; Field Notes</span>
+        <h2 class="section__title">The facts, as filed so far.</h2>
+      </div>
+
+      <div class="card-grid card-grid--details">
+        <div class="detail-card">
+          <span class="detail-card__label">Who</span>
+          <p>Teams from Classes IX&ndash;XII, competing house against house. No individual entries.</p>
+        </div>
+        <div class="detail-card">
+          <span class="detail-card__label">When</span>
+          <p>Date &amp; start time to be announced. Runtime is fixed once it opens: roughly five hours.</p>
+        </div>
+        <div class="detail-card">
+          <span class="detail-card__label">Where</span>
+          <p>Online and on-campus. Some evidence lives on this website. Some of it doesn't.</p>
+        </div>
+        <div class="detail-card">
+          <span class="detail-card__label">Scoring</span>
+          <p>No points, no deductions. Ranking is decided by how many chapters a house clears.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENLIST ============ -->
+    <section id="enlist" class="section reveal">
+      <div class="section__head section__head--center">
+        <span class="eyebrow">05 &middot; Enlist</span>
+        <h2 class="section__title">Your house has a file waiting.</h2>
+        <p class="lede lede--center">Pick it up. Whoever opens it first doesn't get extra points for that &mdash; but
+          they do get a head start on noticing things.</p>
+      </div>
+
+      <div class="house-grid" id="house-grid"><!-- rendered by script.js from CONFIG.houses --></div>
+
+      <a href="#" class="btn btn--primary btn--large" id="register-link">Register Your Team</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__row">
+      <span class="badge-sticker badge-sticker--small">CASE 000</span>
+      <p>This file updates as the case develops. Check back before the date is announced.</p>
+    </div>
+    <p class="site-footer__fine">Organized independently by the student committee running Case Zero. Edit this line with
+      your actual school / committee name before publishing.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
